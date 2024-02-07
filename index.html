@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+        <!-- Links of CSS files -->
+<!--        <link rel="stylesheet" href="css/bootstrap.min.css">-->
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/meanmenu.min.css">
+        <link rel="stylesheet" href="css/magnific-popup.min.css">
+        <link rel="stylesheet" href="css/odometer.min.css">
+        <link rel="stylesheet" href="css/showMoreItems-theme.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="css/remixicon.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+
+        <title>GooBright - Educational Consultancy in Kerala</title>
+
+      <link rel="icon" type="image/png" href="images/favicon.png">
+    </head>
+    <body>
+
+        <!-- Start Top Header Area -->
+        <div class="top-header-area">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 col-md-4">
+                        <ul class="top-header-social-links d-flex align-items-center">
+                            <li>Follow us on:</li>
+                            <li><a href="#" target="_blank"><i class="ri-facebook-fill"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="ri-twitter-fill"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="ri-linkedin-fill"></i></a></li>
+                            <li><a href="https://www.instagram.com/goobright.in/" target="_blank"><i class="ri-instagram-line"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-8 col-md-8">
+                        <ul class="top-header-contact-info">
+                            <li><span style="font-weight: 300">Our Branches  :  Alappuzha , Kollam , Thrissur , Bangalore</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Top Header Area -->
+
+        <!-- Start Navbar Area -->
+        <div class="navbar-area">
+            <div class="enry-responsive-nav">
+                <div class="container">
+                    <div class="enry-responsive-menu">
+                        <div class="logo">
+                            <a href="index-2.html"><img src="images/GooBright.png" alt="logo" style="height: 40px"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="enry-nav">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <a class="navbar-brand" href="index-2.html"><img src="images/GooBright.png" alt="logo" style="height: 60px"></a>
+
+                        <div class="collapse navbar-collapse mean-menu">
+                            <ul class="navbar-nav">
+                                <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                                
+                                <li class="nav-item"><a href="service.html" class="nav-link">Services</a></li>
+
+                                <li class="nav-item"><a href="about.html" class=" nav-link">About Us</a> </li>
+                                
+                                <li class="nav-item"><a href="college.html" class=" nav-link">Colleges</a> </li>
+                                
+                                <li class="nav-item"><a href="gallery.html" class=" nav-link">Gallery</a> </li>
+                                
+                                <li class="nav-item"><a href="letter.html" class=" nav-link">Authorisation Letter</a> </li>
+
+                                <li class="nav-item"><a href="mission.html" class=" nav-link">Mission / Vision</a> </li>
+
+                                <li class="nav-item"><a href="contact.html" class=" nav-link">Contact Us</a> </li>
+                                
+                            </ul>
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- End Navbar Area -->
+       
+        <!-- MODAL POPUP FORM -->
+        
+        <script>
+            function displayModal() {
+            setTimeout(function() {
+            var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+            myModal.show();
+        }, 3000); 
+        }
+            window.onload = displayModal;
+        </script>
+        
+        <div class="modal fade px-5 pt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="contact-form">
+                            <h4>Feel Free to Connect With Us</h4>
+                            <p>Fill the form and we will connect you soon</p>
+                            <form id="contactForm" action="#" method="#">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <div class="form-group">
+                                            <input type="text" name="name" class="form-control" id="name" required="" data-error="Please enter your name" placeholder="Full Name">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <div class="form-group">
+                                            <input type="email" name="email" class="form-control" id="email" required="" data-error="Please enter your email" placeholder="Email Address">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <div class="form-group">
+                                            <input type="number" name="phone_number" class="form-control" id="phone_number" required="" data-error="Please enter your phone number" placeholder="Mobile no">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <div class="form-group">
+                                            <input type="text" name="msg_subject" class="form-control" id="msg_subject" placeholder="Subject" required="" data-error="Please enter your subject">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12 col-md-12 col-sm-12">
+                                        <div class="form-group">
+                                            <textarea name="message" id="message" class="form-control" cols="30" rows="6" required="" data-error="Please enter your message" placeholder="Message..."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div> 
+
+                                    <div class="col-lg-12 col-md-12 col-sm-12">
+                                        <button type="submit" class="default-btn">Send Message <i class="ri-arrow-right-line"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+<!--
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+-->
+                  </div>
+                </div>
+              </div>
+        
+        <!-- MODAL POPUP FORM END -->
+
+        <!-- Start Main Banner Area -->
+        <div class="main-banner-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="main-banner-content">
+                            <span class="sub-title">WELCOME TO GOOBRIGHT</span>
+                            <h1 style="font-size: 50px;">Unlocking Pathways to Success in Education</h1>
+                            <p>"Unlock boundless educational opportunities with our consultancy services in Kerala, serving clients across India and Abroad."</p>
+                            <div class="btn-box">
+                                <a href="#Services" class="default-btn">Get Started<i class="ri-arrow-right-line"></i></a>
+                                <a href="" class="default-btn">See Authorisation letters<i class="ri-arrow-right-line"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12">
+                        <div class="main-banner-image">
+                            <img src="images/gmain.webp" alt="Study in Kerala, india and abroad">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Main Banner Area -->
+
+        <!-- Start Services Area -->
+        <div class="services-area pt-100">
+            <div class="container">
+                <div class="section-title">
+                    <span class="sub-title" id="Services">"Experience our top-tier services."</span>
+                    <h2>Our Services</h2>
+                    <p>"Unlock your academic potential with our tailored educational consultancy services."</p>
+                </div>
+
+                <div class="services-slides owl-carousel owl-theme">
+                    <div class="single-services-box">
+                        <div class="image">
+                            <a href="">
+                                <img src="images/gplanning_1.webp" alt="image">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h3><a href="">Academic Planning and Counseling</a></h3>
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <div class="single-services-box">
+                        <div class="image">
+                            <a href="">
+                                <img src="images/gsupport.webp" alt="image">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h3><a href="">University and Program Selection</a></h3>
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <div class="single-services-box">
+                        <div class="image">
+                            <a href="">
+                                <img src="images/gguide.webp" alt="image" style="height: 275px">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h3><a href="">Career Guidance and Development</a></h3>
+                            <p></p>
+                        </div>
+                    </div>
+                     <div class="single-services-box">
+                        <div class="image">
+                            <a href="">
+                                <img src="images/services3.jpg" alt="image">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h3><a href="">Application Support for Study</a></h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <!-- End Services Area -->
+
+        <!-- Start About Area -->
+        <div class="about-area ptb-100">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-image">
+                            <img src="images/gabout.avif" alt="image" class="rounded">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-content">
+                            <span class="sub-title">"Learn more about our expertise and mission."</span>
+                            <h2>About Us</h2>
+                            <p>Established in 2016, GooBright is your dedicated partner in educational excellence. With a passion for guiding students toward their academic goals, we are committed to providing personalized solutions and expert guidance.</p>
+                            <br>
+                            <h2>Our Origin</h2>
+                            <p>Rooted in the belief that education transforms lives, GooBright was founded to bridge the gap between aspirations and achievements. Our journey began with a vision to create a supportive platform for students to thrive academically and personally.</p>
+                            
+                            <a href="" class="default-btn">Know More<i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End About Area -->
+
+        <!-- Start Funfacts Area -->
+        <div class="funfacts-area bg-color">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-sm-3 col-md-3 col-6">
+                        <div class="single-funfacts-box">
+                            <h3><span class="odometer" data-count="1000">00</span><span class="sign">+</span></h3>
+                            <p>Students Enrolled</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-3 col-md-3 col-6">
+                        <div class="single-funfacts-box">
+                            <h3><span class="odometer" data-count="800">00</span><span class="sign">+</span></h3>
+                            <p>Completed Admission</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-3 col-md-3 col-6">
+                        <div class="single-funfacts-box">
+                            <h3><span class="odometer" data-count="12">00</span><span class="sign">+</span></h3>
+                            <p>Staffs</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-3 col-md-3 col-6">
+                        <div class="single-funfacts-box">
+                            <h3><span class="odometer" data-count="400">00</span><span class="sign">+</span></h3>
+                            <p>Colleges</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Funfacts Area -->
+
+        <!-- Start Projects Area -->
+        <div class="projects-area pt-100 pb-70">
+            <div class="container">
+                <div class="section-title">
+                    <span class="sub-title">"Explore a diverse array of courses tailored to your aspirations, available both in India and abroad, ensuring a global perspective in your educational journey."</span>
+                    <h2>Courses We Offered</h2>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-projects-box">
+                            <img src="images/gmedical_1.webp" alt="Goobright - educational consultancy - medical science">
+                            <h3>Medicine and Life Science</h3>
+                            <a href="" class="default-btn">Medicine and Life Science <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-projects-box">
+                            <img src="images/gnursing_2.webp" alt="image" style="height: 235px; width: 410px">
+                            <h3>Nursing</h3>
+                            <a href="" class="default-btn">Nursing<i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-projects-box">
+                            <img src="images/ghealthcare_3.webp" alt="image">
+                            <h3>Health Care</h3>
+                            <a href="" class="default-btn">Health Care <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-projects-box">
+                            <img src="images/geng_4.webp" alt="image" style="height: 225px; width: 410px">
+                            <h3>Engineering and Technology</h3>
+                            <a href="" class="default-btn">Engineering and Technology <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-projects-box">
+                            <img src="images/glaw_5.webp" alt="image" style="height: 225px; width: 410px">
+                            <h3>Law and Legal Studies</h3>
+                            <a href="" class="default-btn">Law and Legal Studies <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-projects-box">
+                            <img src="images/projects6.jpg" alt="image">
+                            <h3>Arts and Humanities</h3>
+                            <a href="" class="default-btn">Arts and Humanities <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-projects-box">
+                            <img src="images/gdiploma_5.webp" alt="image" style="height: 225px; width: 410px">
+                            <h3>Diplomas</h3>
+                            <a href="" class="default-btn">Diplomas <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-projects-box">
+                            <img src="images/gsocial_7.jpg" alt="image" style="height: 225px; width: 410px">
+                            <h3>Social Sciences</h3>
+                            <a href="" class="default-btn">Social Sciences <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-projects-box">
+                            <img src="images/gbuisness.webp" alt="image" style="height: 225px; width: 410px">
+                            <h3>Business</h3>
+                            <a href="" class="default-btn">Business <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Projects Area -->
+
+      
+        <!-- Start What We Do Area -->
+        <div class="what-we-do-area ptb-100">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="what-we-do-image">
+                            <img src="images/gmissvis.jpg" alt="image" class="rounded">
+                            <img src="images/shape5.png" alt="image" class="shape">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12">
+                        <div class="what-we-do-content">
+                            <h2>OUR MISSION</h2>
+<!--                            <span class="sub-title">"Unlock your academic potential with personalized education consultancy services."</span>-->
+
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="project" role="tabpanel">
+                                    <p>Empowering students to reach their full potential is at the core of our mission. We strive to offer comprehensive educational consultancy services that encompass academic planning, career guidance, and personal development. Our goal is to nurture individuals who are not just successful academically but also well-prepared for the challenges of the future.</p>
+                                </div>
+                            </div><br>
+                            <h2>OUR VISION</h2>
+<!--                            <span class="sub-title">"Unlock your academic potential with personalized education consultancy services."</span>-->
+
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="project" role="tabpanel">
+                                    <p>At GooBright, we envision a world where education is a dynamic force, breaking barriers and shaping empowered individuals. We aspire to be the driving force behind educational transformations that transcend traditional boundaries, creating a global community of lifelong learners.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        
+        </div>
+        <!-- End What We Do Area -->
+
+        <!-- Start Free Quote Area -->
+        <div class="free-quote-area bg-color">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-md-12">
+                        <div class="free-quote-content">
+                            <h2>Get Your Free Consultation Today!</h2>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7 col-md-12">
+                        <div class="free-quote-form">
+                            <h3>GET FREE CONSULTING</h3>
+                            <form>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="form-group">
+                                            <label>Your Name</label>
+                                            <input type="text" class="form-control" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="form-group">
+                                            <label>Your Contact Number</label>
+                                            <input type="tel" class="form-control" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="form-group">
+                                            <label>Services</label>
+                                            <select class="form-select" required>
+                                                <option selected="" disabled>Select a Service</option>
+                                                <option>Academic Planning and Counseling</option>
+                                                <option>University and Program Selection</option>
+                                                <option>Career Guidance and Development</option>
+                                                <option>Application Support for Study</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="form-group">
+                                            <button type="submit" class="default-btn">Request A Call Back <i class="ri-arrow-right-line"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shape3"><img src="images/shape8.png" alt="image"></div>
+        </div>
+        <!-- End Free Quote Area -->
+
+        <!-- Start Call Back Request Area -->
+        <div class="call-back-request-area ptb-100">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="call-back-request-content">
+<!--                            <span class="sub-title">CALL BACK REQUEST</span>-->
+                            <h2> Why <span style="color: var(--mainColor)">Choose Us?</span></h2>
+                            <p>Personalized Guidance: Tailored solutions to meet each student's unique needs.
+                                Experienced Consultants: Our team comprises seasoned educational experts dedicated to your success.</p>
+                            <p>Holistic Approach: We focus not only on academic success but also on personal growth and career readiness.</p>
+                            <a href="" class="default-btn">Connect with us <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12">
+                        <div class="call-back-request-image">
+                            <img src="images/call-back-request.png" alt="image">
+                            <img src="images/shape9.png" class="shape4" alt="image">
+                            <img src="images/shape10.png" class="shape5" alt="image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Call Back Request Area -->
+        
+<!--Testimonials -->
+     
+        
+        <!-- Testimonials End here -->
+
+        <!-- Start Footer Area -->
+        <footer class="footer-area">
+            <div class="container">
+                <div class="row  justify-content-center">
+                    <div class="col-lg-3 col-sm-6 col-md-6">
+                        <div class="single-footer-widget">
+                            <a href="index-2.html" class="logo">
+                                <img src="images/gwhite.png" alt="image" style="height: 50px">
+                            </a>
+                            <p>join us at GooBright and embark on a journey of educational empowerment. Together, let's turn dreams into achievements!</p>
+                            <div class="footer-contact-info">
+                                <h5>Contact:</h5>
+                                <ul>
+                                    <li><span>Call:</span> <a href="tel:+919072228229">+91 90722 28229</a></li>
+                                     <li><span>Email:</span> <a href="mail:goobrightedu@gmail.com">goobrightedu@gmail.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-md-6">
+                        <div class="single-footer-widget pl-4">
+                            <h3>Quick Links</h3>
+                           <ul class="links-list">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="service.html">Services</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="mission.html">Mission / Vision</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-md-6">
+                        <div class="single-footer-widget pl-2">
+                            <h3>Our Services</h3>
+                            <ul class="links-list">
+                                <li><a href="">University Selection</a></li>
+                                <li><a href="">Admission Guidance</a></li>
+                                <li><a href="">Application Support</a></li>
+                                <li><a href="">Academic Counseling</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-md-6">
+                        <div class="single-footer-widget">
+                            <h3>Opening Hours</h3>
+                            <ul class="opening-hours">
+                                <li class="text-white">MON - SAT : 09:00 AM - 05:00 PM</li>
+                                <li class="text-white">SUNDAY : 09:00 AM - 06:00 PM</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-area">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-7 col-sm-6">
+                            <p><i class="ri-copyright-line">GooBright - Educational Consultancy</i> <a href="" target="_blank"></a></p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer Area -->
+
+        <div class="go-top rounded-circle"><i class="ri-arrow-up-s-line"></i></div>
+        
+        <script>
+        var i = 0;
+        function change() {
+          var doc = document.getElementById("whatsapp");
+          var color = ["#69bb93", "#43a5a4"];
+          doc.style.backgroundColor = color[i];
+          i = (i + 1) % color.length;
+        }
+            //"#69bb93", "#43a5a4",
+        setInterval(change, 300);
+        </script>
+        
+        <a  class="whats-app" id="whatsapp" href="https://wa.me/919072228229?text=Hai - Enquiry from Website" target="_blank">
+        <i class="ri-whatsapp-line my-float"></i>
+        </a>
+
+        <!-- Links of JS files -->
+        <script data-cfasync="false" src="js/email-decode.min.js"></script><script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/appear.min.js"></script>
+        <script src="js/odometer.min.js"></script>
+        <script src="js/magnific-popup.min.js"></script>
+        <script src="js/mixitup.min.js"></script>
+        <script src="js/meanmenu.min.js"></script>
+        <script src="js/showMoreItems.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/form-validator.min.js"></script>
+        <script src="js/contact-form-script.js"></script>
+        <script src="js/ajaxchimp.min.js"></script>
+        <script src="js/main.js"></script>
+    
+</body></html>
