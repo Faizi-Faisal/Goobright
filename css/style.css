@@ -3982,10 +3982,6 @@ Go Top CSS
     right: 0px;
     box-shadow: rgba(0, 0, 0, 0.14) 0px 0.2em 2em;
     border-radius: 1em 1em 0px 0px;
-  box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
-    -webkit-tap-highlight-color: transparent;
 }
 @media only screen and (min-width: 900px){
 .chat-box {
@@ -4008,5 +4004,7 @@ Go Top CSS
     text-align: center;
     padding-top: 8%;
 }
-.chat-btn-box .chatSubmit{
+.chat-btn-box .btn {
    cursor: pointer;
+    width: 100%;
+}
