@@ -3,7 +3,7 @@
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1",maximum-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
@@ -297,7 +297,7 @@
         <div class="chat-box my-float" id="chat-box">
         <div class="chat-head">
             <div style="float: right" class="btcls pt-1 pe-2">
-                <i class="ri-close-circle-line" style="font-size: 3em;color: white;cursor: pointer" onclick="chatClose()"></i>
+                <i class="ri-close-circle-line" style="font-size: 1.7em;color: white;cursor: pointer" onclick="chatClose()"></i>
             </div>
             <p style="font-size: 16px;color: white; font-weight: 700;line-height: 14px" class="px-2 pt-4">Have any enquiry?</p>
             <p style="font-size: 12px;color: white; font-weight: 500;line-height: 15px" class="px-2">
@@ -308,12 +308,12 @@
                 
                 <form id="myForm">
                     <div class="pt-3 px-3">
-                    <input type="text" id="name" name="name" class="name form-control" placeholder="Name" style="font-size: 16px; padding-left: 30px" required>
+                    <input type="text" id="name" name="name" class="name form-control" placeholder="Name" style="font-size: 14px; padding-left: 30px" required>
                   </div>
                     
                     <div class="drop-body px-3 pt-3 rounded">
                     <div class="form-control">
-                    <select class="course form-select" id="password" name="password" required aria-label="Default select example" style="background-color: transparent;border: none; font-size: 16px; cursor: pointer" required>
+                    <select class="course form-select" id="password" name="password" required aria-label="Default select example" style="background-color: transparent;border: none; font-size: 14px; cursor: pointer" required>
                       <option value="" selected disabled>Which course are you looking</option>
                       <option value="Medical">Medical</option>
                       <option value="Engineering">Engineering</option>
@@ -321,6 +321,7 @@
                         <option value="Nursing">Paramedical</option>
                         <option value="Nursing">Pharmacy</option>
                         <option value="Nursing">Diploma</option>
+                        <option value="Other Course which you have not mentioned">Other</option>
                     </select>
                     </div>
                     </div>
@@ -333,13 +334,13 @@
                       <option value="Karnataka">Karnataka</option>
                       <option value="Tamil Nadu">Tamil Nadu</option>
                         <option value="Delhi">Delhi</option>
-                        <option value="Other">Other</option>
+                        <option value="Other location which you have not mentioned">Other</option>
                     </select>
                     </div>
                     </div>
                     
-                    <div class="chat-btn-box mx-auto">
-                    <button type="submit" value="Submit" id="submitButton" class="btn" onclick="sendWhatsapp()" disabled><i class="ri-whatsapp-line" style="font-size: 1.2em; padding-top: 1em;"></i>Send Chat</button>
+                    <div class="chat-btn-box mx-auto px-3 pt-5 rounded">
+                    <button type="submit" value="Submit" id="submitButton" class="btn" onclick="sendWhatsapp()" disabled><i class="ri-whatsapp-line" style="font-size: 1.2em; padding-top: 1.2em;"></i>&nbsp;&nbsp;Send Chat</button>
                     </div>
             </form>
 
@@ -373,7 +374,7 @@
             var course = document.querySelector('.course').value;
             var location = document.querySelector('.location').value;
             
-            var url = "https://wa.me/" + phonenumber + "?text=" + "Hi, I am" + " " +name + ","+ " looking for" + " " +course + " " + "course at" + " " +location + "." + "%0a%0a" + "Message from GooBright Website."
+            var url = "https://wa.me/" + phonenumber + "?text=" + "Hi, I am" + " " +name + ","+ " looking for" + " " +course + " " + "college at" + " " +location + "." + "%0a%0a" + "Message from GooBright Website."
             
             window.open(url,'_blank').focus();
         }
