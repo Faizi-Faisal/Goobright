@@ -75,11 +75,9 @@
 
                                 <li class="nav-item"><a href="about.html" class=" nav-link">About Us</a> </li>
                                 
-                                <li class="nav-item"><a href="college.html" class=" nav-link">Colleges</a> </li>
+                                <li class="nav-item"><a href="college.html" class=" nav-link">Colleges / Universities</a> </li>
                                 
                                 <li class="nav-item"><a href="gallery.html" class=" nav-link">Gallery</a> </li>
-                                
-                                <li class="nav-item"><a href="letter.html" class=" nav-link">Authorisation Letter</a> </li>
 
                                 <li class="nav-item"><a href="mission.html" class=" nav-link">Mission / Vision</a> </li>
 
@@ -104,6 +102,7 @@
         }, 3000); 
         }
             window.onload = displayModal;
+            
         </script>
         
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -149,7 +148,7 @@
 
                                     <div class="col-lg-12 col-md-12 col-sm-12">
                                         <div class="form-group">
-                                           <textarea name="message" id="message" class="form-control" style="resize: none" cols="25" rows="6" required="" data-error="Please enter your message" placeholder="Message..."></textarea>
+                                            <textarea name="message" id="message" class="form-control" style="resize: none" cols="25" rows="6" required="" data-error="Please enter your message" placeholder="Message..."></textarea>
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div> 
@@ -182,7 +181,7 @@
                             <span class="sub-title">WELCOME TO GOOBRIGHT</span>
                             <h1 style="font-size: 50px;">Unlocking Pathways to Success in Education</h1>
                             <p>"Unlock boundless educational opportunities with our consultancy services in Kerala, serving clients across India and Abroad."</p>
-                            <div class="btn-box">
+                            <div class="btn-box" id="header-btn">
                                 <a href="#Services" class="default-btn">Get Started<i class="ri-arrow-right-line"></i></a>
                                 <a href="" class="default-btn">See Authorisation letters<i class="ri-arrow-right-line"></i></a>
                             </div>
@@ -309,14 +308,14 @@
 
                     <div class="col-lg-3 col-sm-3 col-md-3 col-6">
                         <div class="single-funfacts-box">
-                            <h3><span class="odometer" data-count="12">00</span><span class="sign">+</span></h3>
+                            <h3><span class="odometer" data-count="30">00</span><span class="sign">+</span></h3>
                             <p>Staffs</p>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-sm-3 col-md-3 col-6">
                         <div class="single-funfacts-box">
-                            <h3><span class="odometer" data-count="400">00</span><span class="sign">+</span></h3>
+                            <h3><span class="odometer" data-count="500">00</span><span class="sign">+</span></h3>
                             <p>Colleges</p>
                         </div>
                     </div>
@@ -533,7 +532,7 @@
      
         
         <!-- Testimonials End here -->
-
+        
         <!-- Start Footer Area -->
         <footer class="footer-area">
             <div class="container">
@@ -613,9 +612,111 @@
         setInterval(change, 300);
         </script>
         
-        <a  class="whats-app" id="whatsapp" href="https://wa.me/919072228229?text=Hai - Enquiry from Website" target="_blank">
+         <!-- Chat Box-->
+
+        <script>
+        function chatClose(){
+            document.getElementById("chat-box").style.display = 'none';
+        }
+        </script>
+        <script>
+        function chatShow(){
+            document.getElementById("chat-box").style.display = 'flex';
+        }
+        </script>
+        
+         <a  class="whats-app" id="whatsapp" href="#" onclick="chatShow()">
         <i class="ri-whatsapp-line my-float"></i>
         </a>
+        
+        
+        <div class="chat-box my-float" id="chat-box">
+        <div class="chat-head">
+            <div style="float: right" class="btcls pt-1 pe-2">
+                <i class="ri-close-circle-line" style="font-size: 1.7em;color: white;cursor: pointer" onclick="chatClose()"></i>
+            </div>
+            <p style="font-size: 16px;color: white; font-weight: 700;line-height: 14px" class="px-2 pt-4">Have any enquiry?</p>
+            <p style="font-size: 12px;color: white; font-weight: 500;line-height: 15px" class="px-2">
+            To enhance our ability to assist you effectively, kindly specify the name , course and location you are interested in.
+            </p>
+            </div>
+            <div class="chat-body">
+                
+                <form id="myForm">
+                    <div class="pt-3 px-3">
+                    <input type="text" id="name" name="name" class="name form-control" placeholder="Name" style="font-size: 14px; padding-left: 30px" required>
+                  </div>
+                    
+                    <div class="drop-body px-3 pt-3 rounded">
+                    <div class="form-control">
+                    <select class="course form-select" id="password" name="password" required aria-label="Default select example" style="background-color: transparent;border: none; font-size: 14px; cursor: pointer" required>
+                      <option value="" selected disabled>Which course are you looking</option>
+                      <option value="Medical">Medical</option>
+                      <option value="Engineering">Engineering</option>
+                      <option value="Nursing">Nursing</option>
+                        <option value="Nursing">Paramedical</option>
+                        <option value="Nursing">Pharmacy</option>
+                        <option value="Other Course which you have not mentioned">Other</option>
+                    </select>
+                    </div>
+                    </div>
+                    
+                    <div class="drop-body px-3 pt-3 rounded">
+                    <div class="form-control">
+                    <select class="location form-select" id="number" name="number" aria-label="Default select example" style="background-color: transparent;border: none; font-size: 14px; cursor: pointer" required>
+                      <option value="" selected disabled>Location</option>
+                      <option value="Kerala">Kerala</option>
+                      <option value="Karnataka">Karnataka</option>
+                      <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Other Location which you have not mentioned">Other</option>
+                    </select>
+                    </div>
+                    </div>
+                    
+                    <div class="chat-btn-box mx-auto px-3 pt-5 rounded">
+                    <button type="submit" value="Submit" id="submitButton" class="btn" onclick="sendWhatsapp()" disabled><i class="ri-whatsapp-line" style="font-size: 1.2em; padding-top: 1em;"></i>Send Chat</button>
+                    </div>
+            </form>
+
+            <script>
+                const nameInput = document.getElementById('name');
+                const passwordInput = document.getElementById('password');
+                const numberInput = document.getElementById('number');
+                const submitButton = document.getElementById('submitButton');
+
+                nameInput.addEventListener('input', toggleSubmitButton);
+                passwordInput.addEventListener('input', toggleSubmitButton);
+                numberInput.addEventListener('input', toggleSubmitButton);
+
+                function toggleSubmitButton() {
+                    if (nameInput.value.trim() !== '' && passwordInput.value.trim() !== '' && numberInput.value.trim() !== '') {
+                        submitButton.disabled = false;
+                        document.getElementById("submitButton").style.backgroundColor = "#69bb93";
+                        document.getElementById("submitButton").style.color = "white";
+                    } else {
+                        submitButton.disabled = true;
+                    }
+                }
+            </script>
+            </div>
+        </div>
+        
+        <script>
+        function sendWhatsapp(){
+            var phonenumber = "+919072228229";
+            var name = document.querySelector('.name').value;
+            var course = document.querySelector('.course').value;
+            var location = document.querySelector('.location').value;
+            
+            var url = "https://wa.me/" + phonenumber + "?text=" + "Hi, I am" + " " +name + ","+ " looking for" + " " +course + " " + "college at" + " " +location + "." + "%0a%0a" + "Message from GooBright Website."
+            
+            window.open(url,'_blank').focus();
+        }
+        </script>
+        
+        <!--End Chat Box -->
+        
 
         <!-- Links of JS files -->
         <script data-cfasync="false" src="js/email-decode.min.js"></script><script src="js/jquery.min.js"></script>
