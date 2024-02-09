@@ -3482,38 +3482,38 @@ Contact Area CSS
   font-size: 40px;
 }
 
-.contact-form #contactForm {
+.contact-form #gform {
   margin-top: 25px;
 }
 
-.contact-form #contactForm .form-group {
+.contact-form #gform .form-group {
   margin-bottom: 20px;
 }
 
-.contact-form #contactForm .form-control {
+.contact-form #gform .form-control {
   border: 1px solid #eeeeee !important;
   border-radius: 5px;
 }
 
-.contact-form #contactForm .form-control:focus {
+.contact-form #gform .form-control:focus {
   border-color: var(--mainColor) !important;
 }
 
-.contact-form #contactForm .form-check .form-check-label {
+.contact-form #gform .form-check .form-check-label {
   color: var(--optionalColor);
   position: relative;
   top: 1px;
 }
 
-.contact-form #contactForm .form-check .form-check-label a {
+.contact-form #gform .form-check .form-check-label a {
   color: var(--mainColor);
 }
 
-.contact-form #contactForm .form-check .form-check-label a:hover {
+.contact-form #gform .form-check .form-check-label a:hover {
   text-decoration: underline;
 }
 
-.contact-form #contactForm .default-btn {
+.contact-form #gform .default-btn {
   width: 100%;
   display: block;
   margin-top: 20px;
@@ -3523,44 +3523,44 @@ Contact Area CSS
   padding-bottom: 13px;
 }
 
-.contact-form #contactForm .default-btn i {
+.contact-form #gform .default-btn i {
   background-color: var(--whiteColor);
   color: var(--mainColor);
 }
 
-.contact-form #contactForm .default-btn::before {
+.contact-form #gform .default-btn::before {
   opacity: 1;
 }
 
-.contact-form #contactForm .default-btn:hover {
+.contact-form #gform .default-btn:hover {
   background-color: var(--mainColor2);
   color: var(--whiteColor);
 }
 
-.contact-form #contactForm .default-btn:hover i {
+.contact-form #gform .default-btn:hover i {
   background-color: var(--whiteColor);
   color: var(--blackColor);
 }
 
-.contact-form #contactForm .default-btn:hover::before {
+.contact-form #gform .default-btn:hover::before {
   border-color: var(--blackColor);
 }
 
-.contact-form #contactForm .help-block.with-errors {
+.contact-form #gform .help-block.with-errors {
   color: red;
   margin-bottom: 0;
   margin-top: 12px;
 }
 
-.contact-form #contactForm #msgSubmit {
+.contact-form #gform #msgSubmit {
   margin: 0;
 }
 
-.contact-form #contactForm #msgSubmit.text-danger {
+.contact-form #gform #msgSubmit.text-danger {
   margin-top: 12px;
 }
 
-.contact-form #contactForm #msgSubmit.text-success {
+.contact-form #gform #msgSubmit.text-success {
   margin-top: 12px;
 }
 
