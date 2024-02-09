@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="css/remixicon.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
         <title>GooBright - Educational Consultancy in Kerala</title>
 
@@ -113,10 +114,10 @@
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <div class="contact-form">
+                        <div class="gform">
                             <h4>Feel Free to Connect With Us</h4>
                             <p>Fill the form and we will connect you soon</p>
-                            <form id="contactForm" action="#" method="#">
+                            <form id="gform" action="" method="post">
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-sm-6">
                                         <div class="form-group">
@@ -169,6 +170,25 @@
                   </div>
                 </div>
               </div>
+        <script>
+        $("#gform").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+             url:"https://script.google.com/macros/s/AKfycbyUVUlBkOTd3T0QyqZk5dDXYNeqnBpjwdmEj46EAS5yoeNLoQRIyiMYQksLDHhiCkChBQ/exec",
+                data:$("#gform").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+//                    window.location.reload()
+                    window.location.href="#"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
         
         <!-- MODAL POPUP FORM END -->
 
