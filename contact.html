@@ -19,8 +19,9 @@
         <link rel="stylesheet" href="css/remixicon.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-        <title>GooBright - Educational Consultancy</title>
+        <title>Contact - GooBright - Educational Consultancy</title>
 
       <link rel="icon" type="image/png" href="images/favicon.png">
     </head>
@@ -162,7 +163,9 @@
                     <div class="col-lg-6 col-md-12">
                         <div class="contact-form">
                             <h2>Send Your Query To Us</h2>
-                            <form id="contactForm" action="#" method="#">
+                            
+                            
+                            <form id="gform" method="post" action="">
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-sm-6">
                                         <div class="form-group">
@@ -210,8 +213,6 @@
 
                                     <div class="col-lg-12 col-md-12 col-sm-12">
                                         <button type="submit" class="default-btn">Send Message <i class="ri-arrow-right-line"></i></button>
-                                        <div id="msgSubmit" class="h3 text-center hidden"></div>
-                                        <div class="clearfix"></div>
                                     </div>
                                 </div>
                             </form>
@@ -221,7 +222,25 @@
             </div>
         </div>
         <!-- End Contact Area -->
-        
+        <script>
+        $("#gform").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+             url:"https://script.google.com/macros/s/AKfycbyUVUlBkOTd3T0QyqZk5dDXYNeqnBpjwdmEj46EAS5yoeNLoQRIyiMYQksLDHhiCkChBQ/exec",
+                data:$("#gform").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+//                    window.location.reload()
+                    window.location.href=""
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
         
         <!-- Start Footer Area -->
        <footer class="footer-area">
@@ -423,3 +442,6 @@
         <script src="js/main.js"></script>
     
 </body></html>
+
+
+https://script.google.com/macros/s/AKfycbyUVUlBkOTd3T0QyqZk5dDXYNeqnBpjwdmEj46EAS5yoeNLoQRIyiMYQksLDHhiCkChBQ/exec
