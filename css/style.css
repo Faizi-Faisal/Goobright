@@ -3706,7 +3706,7 @@ Pagination Area CSS
 Footer Area CSS
 =================================================*/
 .footer-area {
-  background-color: var(--blackColor);
+  background-color: #454545;
   padding-top: 150px;
   position: relative;
   z-index: 1;
