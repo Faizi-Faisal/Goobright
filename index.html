@@ -254,78 +254,48 @@
                     <h2>Courses We Offered</h2>
                 </div>
 
-                <div class="row justify-content-center">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-projects-box">
-                            <img src="images/gmedical_1.webp" alt="Goobright - educational consultancy - medical science">
-                            <h3>Medicine and Life Science</h3>
-                            <a href="" class="default-btn">Medicine and Life Science <i class="ri-arrow-right-line"></i></a>
-                        </div>
-                    </div>
+                <div class="row" id="course">
 
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-projects-box">
-                            <img src="images/gnursing_2.webp" alt="image" style="height: 235px; width: 410px">
-                            <h3>Nursing</h3>
-                            <a href="" class="default-btn">Nursing<i class="ri-arrow-right-line"></i></a>
-                        </div>
+                    <div class="col-md-6 col-lg-4 coursed" id="medical" onclick="navigate('medical')">
+                    <img src="images/c1.webp" alt="image" style="height: 215px; width: 410px">
                     </div>
+                    
+                    <div class="col-md-6 col-lg-4 coursed">
+                        <img src="images/c2.webp" alt="image" style="height: 215px; width: 410px" id="nurseing" onclick="navigate('nurseing')">
+                        </div>
+                        <div class="col-md-6 col-lg-4 coursed" id="engineering" onclick="navigate('engineering')">
+                            <img src="images/c3.webp" alt="image" style="height: 215px; width: 410px">
+                            </div>
+                            <div class="col-md-6 col-lg-4 coursed">
+                                <img src="images/c4.webp" alt="image" style="height: 215px; width: 410px" id="pharmacy" onclick="navigate('pharmacy')">
+                                </div>
+                                <div class="col-md-6 col-lg-4 coursed">
+                                    <img src="images/c5.webp" alt="image" style="height: 215px; width: 410px" id="paramedical" onclick="navigate('paramedical')">
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 coursed">
+                                        <img src="images/c6.webp" alt="image" style="height: 215px; width: 410px" id="Bsc" onclick="navigate('Bsc')">
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 coursed">
+                                            <img src="images/c7.webp" alt="image" style="height: 215px; width: 410px" id="managementz" onclick="navigate('managementz')">
+                                            </div>
+                                            <div class="col-md-6 col-lg-4 coursed">
+                                                <img src="images/c8.webp" alt="image" style="height: 215px; width: 410px"  id="law" onclick="navigate('law')">
+                                                </div>
+                                                <div class="col-md-6 col-lg-4 coursed">
+                                                    <img src="images/c9.webp" alt="image" style="height: 215px; width: 410px" id="diploma" onclick="navigate('diploma')">
+                                                    </div>
 
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-projects-box">
-                            <img src="images/ghealthcare_3.webp" alt="image">
-                            <h3>Health Care</h3>
-                            <a href="" class="default-btn">Health Care <i class="ri-arrow-right-line"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-projects-box">
-                            <img src="images/geng_4.webp" alt="image" style="height: 225px; width: 410px">
-                            <h3>Engineering and Technology</h3>
-                            <a href="" class="default-btn">Engineering and Technology <i class="ri-arrow-right-line"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-projects-box">
-                            <img src="images/glaw_5.webp" alt="image" style="height: 225px; width: 410px">
-                            <h3>Law and Legal Studies</h3>
-                            <a href="" class="default-btn">Law and Legal Studies <i class="ri-arrow-right-line"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-projects-box">
-                            <img src="images/projects6.jpg" alt="image">
-                            <h3>Management Courses</h3>
-                            <a href="" class="default-btn">Management Courses <i class="ri-arrow-right-line"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-projects-box">
-                            <img src="images/gdiploma_5.webp" alt="image" style="height: 225px; width: 410px">
-                            <h3>Diplomas</h3>
-                            <a href="" class="default-btn">Diplomas <i class="ri-arrow-right-line"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-projects-box">
-                            <img src="images/gpharmacy.avif" alt="image" style="height: 225px; width: 410px">
-                            <h3>Pharmacy</h3>
-                            <a href="" class="default-btn">Pharmacy <i class="ri-arrow-right-line"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-projects-box">
-                            <img src="images/gbuisness.webp" alt="image" style="height: 225px; width: 410px">
-                            <h3>Business</h3>
-                            <a href="" class="default-btn">Business <i class="ri-arrow-right-line"></i></a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
+
+        <script>
+            function navigate(plan) {
+                localStorage.setItem('selectedPlan', plan);
+                window.location.href = 'detailed_course.html?section=' + plan;
+            }
+        </script>
+        
         <!-- End Projects Area -->
 
       
