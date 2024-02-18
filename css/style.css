@@ -4024,10 +4024,10 @@ Footer Area CSS
 .get_admission {
   position: fixed;
   width: 148px;
-  height: 25px;
+  height: 30px;
   bottom: 3px;
   border-radius: 2px;
-  background-color: rgb(59, 59, 59);
+  background-color: rgb(110, 110, 110);
   color: #FFF;
   text-align: center;
   align-items: center;
