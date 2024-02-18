@@ -4021,3 +4021,29 @@ Footer Area CSS
   justify-content: space-between;
   margin: 10px;
 }
+.get_admission {
+  position: fixed;
+  width: 148px;
+  height: 25px;
+  bottom: 3px;
+  border-radius: 2px;
+  background-color: rgb(59, 59, 59);
+  color: #FFF;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  right: 0px;
+  z-index: 80;
+  cursor: pointer;
+  transition: transform .7s ease-out;
+}
+.get_admission:hover{
+  color: black;
+}
+.footer-area {
+  z-index: 81;
+}
+.main-banner-area {
+  z-index: 81;
+}
